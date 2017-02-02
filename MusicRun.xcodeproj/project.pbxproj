@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191637251E0291A100F2E916 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191637241E0291A100F2E916 /* Song.swift */; };
+		191D08D51E02A355009979E2 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = 191D08D41E02A355009979E2 /* square.png */; };
+		191D08D71E02B54E009979E2 /* note_sfx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 191D08D61E02B54E009979E2 /* note_sfx.mp3 */; };
+		5A067BD31E017FCE0047E717 /* BarrierEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BCF1E017FCE0047E717 /* BarrierEntity.swift */; };
+		5A067BD41E017FCE0047E717 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BD01E017FCE0047E717 /* EntityManager.swift */; };
+		5A067BD51E017FCE0047E717 /* NoteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BD11E017FCE0047E717 /* NoteEntity.swift */; };
+		5A067BD61E017FCE0047E717 /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BD21E017FCE0047E717 /* PlayerEntity.swift */; };
+		5A067BDC1E017FF20047E717 /* BarrierComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BD81E017FF20047E717 /* BarrierComponent.swift */; };
+		5A067BDD1E017FF20047E717 /* NoteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BD91E017FF20047E717 /* NoteComponent.swift */; };
+		5A067BDE1E017FF20047E717 /* PlayerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BDA1E017FF20047E717 /* PlayerComponent.swift */; };
+		5A067BDF1E017FF20047E717 /* TeamComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BDB1E017FF20047E717 /* TeamComponent.swift */; };
+		5A067BE31E018ECA0047E717 /* JumpBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BE21E018ECA0047E717 /* JumpBehaviour.swift */; };
+		5A067BE51E0192C50047E717 /* Behaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BE41E0192C50047E717 /* Behaviour.swift */; };
+		5A067BE71E01BB610047E717 /* noteAutoAnimata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A067BE61E01BB610047E717 /* noteAutoAnimata.swift */; };
+		5A067BF41E01BD310047E717 /* allsaints.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BE81E01BD300047E717 /* allsaints.mp3 */; };
+		5A067BF61E01BD310047E717 /* christina.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BEA1E01BD300047E717 /* christina.mp3 */; };
+		5A067BF71E01BD310047E717 /* David Guetta - Play Hard ft. Ne-Yo, Akon (Lyrics).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BEB1E01BD300047E717 /* David Guetta - Play Hard ft. Ne-Yo, Akon (Lyrics).mp3 */; };
+		5A067BF81E01BD310047E717 /* David Guetta ft. Nicki Minaj - Turn Me On (Lyric Video) (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BEC1E01BD300047E717 /* David Guetta ft. Nicki Minaj - Turn Me On (Lyric Video) (1).mp3 */; };
+		5A067BF91E01BD310047E717 /* Elio e le Storie Tese - Born to be Abramo ∞ - Ω.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BED1E01BD300047E717 /* Elio e le Storie Tese - Born to be Abramo ∞ - Ω.mp3 */; };
+		5A067BFA1E01BD310047E717 /* Lady Gaga   Telephone   Lyrics on screen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BEE1E01BD300047E717 /* Lady Gaga   Telephone   Lyrics on screen.mp3 */; };
+		5A067BFB1E01BD310047E717 /* Lady GaGa just dance lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BEF1E01BD310047E717 /* Lady GaGa just dance lyrics.mp3 */; };
+		5A067BFC1E01BD310047E717 /* Live Your Life -  MIKA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BF01E01BD310047E717 /* Live Your Life -  MIKA.mp3 */; };
+		5A067BFD1E01BD310047E717 /* Mark Ronson - Uptown Funk (feat. Bruno Mars) - Lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BF11E01BD310047E717 /* Mark Ronson - Uptown Funk (feat. Bruno Mars) - Lyrics.mp3 */; };
+		5A067BFE1E01BD310047E717 /* Rolling Stones-start me up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BF21E01BD310047E717 /* Rolling Stones-start me up.mp3 */; };
+		5A067BFF1E01BD310047E717 /* beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5A067BF31E01BD310047E717 /* beach.mp3 */; };
+		5A2D382F1DFEA83800D45F5E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D382E1DFEA83800D45F5E /* MainViewController.swift */; };
+		5A850D3D1DF06453009C94A5 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A850D3C1DF06453009C94A5 /* Player.swift */; };
+		5A850D3F1DF06C62009C94A5 /* PhysicsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A850D3E1DF06C62009C94A5 /* PhysicsCategory.swift */; };
+		5A850D451DF06F80009C94A5 /* Barriers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A850D441DF06F80009C94A5 /* Barriers.swift */; };
+		5A850D471DF07333009C94A5 /* BarrierTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A850D461DF07333009C94A5 /* BarrierTexture.swift */; };
+		5A850D491DF07D56009C94A5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A850D481DF07D56009C94A5 /* Note.swift */; };
+		5AC29E541DDDA945006D4213 /* medley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AC29E531DDDA945006D4213 /* medley.mp3 */; };
+		5AC29E561DDDD285006D4213 /* SfondoSfumato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC29E551DDDD285006D4213 /* SfondoSfumato.swift */; };
+		5AC29E5C1DDDF907006D4213 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC29E5B1DDDF907006D4213 /* Main.storyboard */; };
+		5AC29E5E1DDDFC9D006D4213 /* Galindo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AC29E5D1DDDFC9D006D4213 /* Galindo-Regular.ttf */; };
+		5AF9A9551DFDC0C00052E8EE /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9A9541DFDC0C00052E8EE /* PlaylistTableViewCell.swift */; };
+		5AF9A9571DFDC0D10052E8EE /* PlaylistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9A9561DFDC0D10052E8EE /* PlaylistTableViewController.swift */; };
+		655CA4A41DD9C1960045F788 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655CA4A31DD9C1960045F788 /* Array.swift */; };
+		655CA4A71DD9CDBC0045F788 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655CA4A61DD9CDBC0045F788 /* SpriteKit.framework */; };
+		655CA4AD1DD9CEB20045F788 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 655CA4AC1DD9CEB20045F788 /* AudioKit.framework */; };
+		655CA4AE1DD9CEB20045F788 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 655CA4AC1DD9CEB20045F788 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		655CA4B21DD9D0000045F788 /* AudioAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655CA4B01DD9D0000045F788 /* AudioAnalysis.swift */; };
+		6880DB3C1DFF425B00002A01 /* Pentagramma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880DB3B1DFF425B00002A01 /* Pentagramma.swift */; };
+		6880DB3E1DFF507F00002A01 /* drawingFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880DB3D1DFF507F00002A01 /* drawingFuncs.swift */; };
+		6880DB401DFFE56900002A01 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880DB3F1DFFE56900002A01 /* GameViewController.swift */; };
+		6880DB421E00452C00002A01 /* generatingFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880DB411E00452C00002A01 /* generatingFunc.swift */; };
+		68887FBC1E005D1400F029A2 /* benny.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 68887FBB1E005D1400F029A2 /* benny.mp3 */; };
+		68B53D6A1DDB39EE00B47A94 /* wavePlotter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B53D691DDB39EE00B47A94 /* wavePlotter.swift */; };
+		798B96681DD48D36000F1F11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B96671DD48D36000F1F11 /* AppDelegate.swift */; };
+		798B966E1DD48D36000F1F11 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798B966D1DD48D36000F1F11 /* GameScene.swift */; };
+		798B96751DD48D36000F1F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798B96741DD48D36000F1F11 /* Assets.xcassets */; };
+		798B96781DD48D36000F1F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798B96761DD48D36000F1F11 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		655CA4AF1DD9CEB20045F788 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				655CA4AE1DD9CEB20045F788 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		191637241E0291A100F2E916 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		191D08D41E02A355009979E2 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
+		191D08D61E02B54E009979E2 /* note_sfx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = note_sfx.mp3; sourceTree = "<group>"; };
+		5A067BCF1E017FCE0047E717 /* BarrierEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarrierEntity.swift; sourceTree = "<group>"; };
+		5A067BD01E017FCE0047E717 /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		5A067BD11E017FCE0047E717 /* NoteEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteEntity.swift; sourceTree = "<group>"; };
+		5A067BD21E017FCE0047E717 /* PlayerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerEntity.swift; sourceTree = "<group>"; };
+		5A067BD81E017FF20047E717 /* BarrierComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarrierComponent.swift; sourceTree = "<group>"; };
+		5A067BD91E017FF20047E717 /* NoteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteComponent.swift; sourceTree = "<group>"; };
+		5A067BDA1E017FF20047E717 /* PlayerComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerComponent.swift; sourceTree = "<group>"; };
+		5A067BDB1E017FF20047E717 /* TeamComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamComponent.swift; sourceTree = "<group>"; };
+		5A067BE21E018ECA0047E717 /* JumpBehaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpBehaviour.swift; sourceTree = "<group>"; };
+		5A067BE41E0192C50047E717 /* Behaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behaviour.swift; sourceTree = "<group>"; };
+		5A067BE61E01BB610047E717 /* noteAutoAnimata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = noteAutoAnimata.swift; sourceTree = "<group>"; };
+		5A067BE81E01BD300047E717 /* allsaints.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = allsaints.mp3; sourceTree = "<group>"; };
+		5A067BEA1E01BD300047E717 /* christina.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = christina.mp3; sourceTree = "<group>"; };
+		5A067BEB1E01BD300047E717 /* David Guetta - Play Hard ft. Ne-Yo, Akon (Lyrics).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "David Guetta - Play Hard ft. Ne-Yo, Akon (Lyrics).mp3"; sourceTree = "<group>"; };
+		5A067BEC1E01BD300047E717 /* David Guetta ft. Nicki Minaj - Turn Me On (Lyric Video) (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "David Guetta ft. Nicki Minaj - Turn Me On (Lyric Video) (1).mp3"; sourceTree = "<group>"; };
+		5A067BED1E01BD300047E717 /* Elio e le Storie Tese - Born to be Abramo ∞ - Ω.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Elio e le Storie Tese - Born to be Abramo ∞ - Ω.mp3"; sourceTree = "<group>"; };
+		5A067BEE1E01BD300047E717 /* Lady Gaga   Telephone   Lyrics on screen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lady Gaga   Telephone   Lyrics on screen.mp3"; sourceTree = "<group>"; };
+		5A067BEF1E01BD310047E717 /* Lady GaGa just dance lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lady GaGa just dance lyrics.mp3"; sourceTree = "<group>"; };
+		5A067BF01E01BD310047E717 /* Live Your Life -  MIKA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Live Your Life -  MIKA.mp3"; sourceTree = "<group>"; };
+		5A067BF11E01BD310047E717 /* Mark Ronson - Uptown Funk (feat. Bruno Mars) - Lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mark Ronson - Uptown Funk (feat. Bruno Mars) - Lyrics.mp3"; sourceTree = "<group>"; };
+		5A067BF21E01BD310047E717 /* Rolling Stones-start me up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rolling Stones-start me up.mp3"; sourceTree = "<group>"; };
+		5A067BF31E01BD310047E717 /* beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beach.mp3; sourceTree = "<group>"; };
+		5A2D382E1DFEA83800D45F5E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5A850D3C1DF06453009C94A5 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5A850D3E1DF06C62009C94A5 /* PhysicsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsCategory.swift; sourceTree = "<group>"; };
+		5A850D441DF06F80009C94A5 /* Barriers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barriers.swift; sourceTree = "<group>"; };
+		5A850D461DF07333009C94A5 /* BarrierTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarrierTexture.swift; sourceTree = "<group>"; };
+		5A850D481DF07D56009C94A5 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		5AC29E531DDDA945006D4213 /* medley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = medley.mp3; sourceTree = "<group>"; };
+		5AC29E551DDDD285006D4213 /* SfondoSfumato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SfondoSfumato.swift; sourceTree = "<group>"; };
+		5AC29E5B1DDDF907006D4213 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5AC29E5D1DDDFC9D006D4213 /* Galindo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Galindo-Regular.ttf"; sourceTree = "<group>"; };
+		5AF9A9541DFDC0C00052E8EE /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		5AF9A9561DFDC0D10052E8EE /* PlaylistTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewController.swift; sourceTree = "<group>"; };
+		655CA4A31DD9C1960045F788 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		655CA4A61DD9CDBC0045F788 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		655CA4A81DD9CE130045F788 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "../../../Downloads/AudioKit-tvOS/AudioKit.framework"; sourceTree = "<group>"; };
+		655CA4AA1DD9CEA50045F788 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioKit.framework; path = "../../../Downloads/AudioKit-iOS/AudioKit.framework"; sourceTree = "<group>"; };
+		655CA4AC1DD9CEB20045F788 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		655CA4B01DD9D0000045F788 /* AudioAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioAnalysis.swift; sourceTree = "<group>"; };
+		6880DB3B1DFF425B00002A01 /* Pentagramma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pentagramma.swift; sourceTree = "<group>"; };
+		6880DB3D1DFF507F00002A01 /* drawingFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawingFuncs.swift; sourceTree = "<group>"; };
+		6880DB3F1DFFE56900002A01 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6880DB411E00452C00002A01 /* generatingFunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = generatingFunc.swift; sourceTree = "<group>"; };
+		68887FBB1E005D1400F029A2 /* benny.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = benny.mp3; sourceTree = "<group>"; };
+		68B53D691DDB39EE00B47A94 /* wavePlotter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wavePlotter.swift; sourceTree = "<group>"; };
+		798B96641DD48D36000F1F11 /* MusicRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		798B96671DD48D36000F1F11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		798B966D1DD48D36000F1F11 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		798B96741DD48D36000F1F11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		798B96771DD48D36000F1F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		798B96791DD48D36000F1F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		798B96611DD48D36000F1F11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655CA4AD1DD9CEB20045F788 /* AudioKit.framework in Frameworks */,
+				655CA4A71DD9CDBC0045F788 /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A067BCE1E017FB40047E717 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5A067BCF1E017FCE0047E717 /* BarrierEntity.swift */,
+				5A067BD01E017FCE0047E717 /* EntityManager.swift */,
+				5A067BD11E017FCE0047E717 /* NoteEntity.swift */,
+				5A067BD21E017FCE0047E717 /* PlayerEntity.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		5A067BD71E017FD30047E717 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				5A067BD81E017FF20047E717 /* BarrierComponent.swift */,
+				5A067BD91E017FF20047E717 /* NoteComponent.swift */,
+				5A067BDA1E017FF20047E717 /* PlayerComponent.swift */,
+				5A067BDB1E017FF20047E717 /* TeamComponent.swift */,
+				5A067BE41E0192C50047E717 /* Behaviour.swift */,
+			);
+			name = Component;
+			sourceTree = "<group>";
+		};
+		5A067BE01E017FF70047E717 /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				5A067BE11E018EBE0047E717 /* Behaviour */,
+				5A067BD71E017FD30047E717 /* Component */,
+				5A067BCE1E017FB40047E717 /* Entities */,
+			);
+			name = Gameplay;
+			sourceTree = "<group>";
+		};
+		5A067BE11E018EBE0047E717 /* Behaviour */ = {
+			isa = PBXGroup;
+			children = (
+				5A067BE21E018ECA0047E717 /* JumpBehaviour.swift */,
+			);
+			name = Behaviour;
+			sourceTree = "<group>";
+		};
+		5A850D401DF06EA9009C94A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A850D3C1DF06453009C94A5 /* Player.swift */,
+				5A850D3E1DF06C62009C94A5 /* PhysicsCategory.swift */,
+				5A850D441DF06F80009C94A5 /* Barriers.swift */,
+				5A850D461DF07333009C94A5 /* BarrierTexture.swift */,
+				5A850D481DF07D56009C94A5 /* Note.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5A850D411DF06ED1009C94A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5AC29E551DDDD285006D4213 /* SfondoSfumato.swift */,
+				5A067BE61E01BB610047E717 /* noteAutoAnimata.swift */,
+				6880DB3B1DFF425B00002A01 /* Pentagramma.swift */,
+				798B966D1DD48D36000F1F11 /* GameScene.swift */,
+				68B53D691DDB39EE00B47A94 /* wavePlotter.swift */,
+				5AC29E5B1DDDF907006D4213 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5A850D421DF06EEE009C94A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6880DB3F1DFFE56900002A01 /* GameViewController.swift */,
+				5A2D382E1DFEA83800D45F5E /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5A850D431DF06F19009C94A5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				798B96671DD48D36000F1F11 /* AppDelegate.swift */,
+				6880DB3D1DFF507F00002A01 /* drawingFuncs.swift */,
+				6880DB411E00452C00002A01 /* generatingFunc.swift */,
+				5AC29E5D1DDDFC9D006D4213 /* Galindo-Regular.ttf */,
+				798B96791DD48D36000F1F11 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		5AF9A9581DFDC0D70052E8EE /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				5AF9A9541DFDC0C00052E8EE /* PlaylistTableViewCell.swift */,
+				5AF9A9561DFDC0D10052E8EE /* PlaylistTableViewController.swift */,
+				191637241E0291A100F2E916 /* Song.swift */,
+			);
+			name = Playlist;
+			sourceTree = "<group>";
+		};
+		655CA4A51DD9CDBC0045F788 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				655CA4AA1DD9CEA50045F788 /* AudioKit.framework */,
+				655CA4A81DD9CE130045F788 /* AudioKit.framework */,
+				655CA4A61DD9CDBC0045F788 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		655CA4B41DD9D0060045F788 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				655CA4B01DD9D0000045F788 /* AudioAnalysis.swift */,
+				5AC29E531DDDA945006D4213 /* medley.mp3 */,
+				5A067BE81E01BD300047E717 /* allsaints.mp3 */,
+				191D08D61E02B54E009979E2 /* note_sfx.mp3 */,
+				5A067BEA1E01BD300047E717 /* christina.mp3 */,
+				5A067BEB1E01BD300047E717 /* David Guetta - Play Hard ft. Ne-Yo, Akon (Lyrics).mp3 */,
+				5A067BEC1E01BD300047E717 /* David Guetta ft. Nicki Minaj - Turn Me On (Lyric Video) (1).mp3 */,
+				5A067BED1E01BD300047E717 /* Elio e le Storie Tese - Born to be Abramo ∞ - Ω.mp3 */,
+				5A067BEE1E01BD300047E717 /* Lady Gaga   Telephone   Lyrics on screen.mp3 */,
+				5A067BEF1E01BD310047E717 /* Lady GaGa just dance lyrics.mp3 */,
+				5A067BF01E01BD310047E717 /* Live Your Life -  MIKA.mp3 */,
+				5A067BF11E01BD310047E717 /* Mark Ronson - Uptown Funk (feat. Bruno Mars) - Lyrics.mp3 */,
+				5A067BF21E01BD310047E717 /* Rolling Stones-start me up.mp3 */,
+				5A067BF31E01BD310047E717 /* beach.mp3 */,
+				68887FBB1E005D1400F029A2 /* benny.mp3 */,
+				655CA4A31DD9C1960045F788 /* Array.swift */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		798B965B1DD48D36000F1F11 = {
+			isa = PBXGroup;
+			children = (
+				655CA4AC1DD9CEB20045F788 /* AudioKit.framework */,
+				798B96661DD48D36000F1F11 /* MusicRun */,
+				798B96651DD48D36000F1F11 /* Products */,
+				655CA4A51DD9CDBC0045F788 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		798B96651DD48D36000F1F11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				798B96641DD48D36000F1F11 /* MusicRun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		798B96661DD48D36000F1F11 /* MusicRun */ = {
+			isa = PBXGroup;
+			children = (
+				5A067BE01E017FF70047E717 /* Gameplay */,
+				5AF9A9581DFDC0D70052E8EE /* Playlist */,
+				655CA4B41DD9D0060045F788 /* Audio */,
+				5A850D421DF06EEE009C94A5 /* Controller */,
+				5A850D401DF06EA9009C94A5 /* Model */,
+				5A850D431DF06F19009C94A5 /* Support */,
+				5A850D411DF06ED1009C94A5 /* View */,
+				798B96741DD48D36000F1F11 /* Assets.xcassets */,
+				191D08D41E02A355009979E2 /* square.png */,
+				798B96761DD48D36000F1F11 /* LaunchScreen.storyboard */,
+			);
+			path = MusicRun;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		798B96631DD48D36000F1F11 /* MusicRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 798B967C1DD48D36000F1F11 /* Build configuration list for PBXNativeTarget "MusicRun" */;
+			buildPhases = (
+				798B96601DD48D36000F1F11 /* Sources */,
+				798B96611DD48D36000F1F11 /* Frameworks */,
+				798B96621DD48D36000F1F11 /* Resources */,
+				655CA4AF1DD9CEB20045F788 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicRun;
+			productName = MusicRun;
+			productReference = 798B96641DD48D36000F1F11 /* MusicRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		798B965C1DD48D36000F1F11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Nicola Calvanese";
+				TargetAttributes = {
+					798B96631DD48D36000F1F11 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GN42Y8BWCS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 798B965F1DD48D36000F1F11 /* Build configuration list for PBXProject "MusicRun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 798B965B1DD48D36000F1F11;
+			productRefGroup = 798B96651DD48D36000F1F11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				798B96631DD48D36000F1F11 /* MusicRun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		798B96621DD48D36000F1F11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A067BFF1E01BD310047E717 /* beach.mp3 in Resources */,
+				5A067BF71E01BD310047E717 /* David Guetta - Play Hard ft. Ne-Yo, Akon (Lyrics).mp3 in Resources */,
+				5A067BFB1E01BD310047E717 /* Lady GaGa just dance lyrics.mp3 in Resources */,
+				191D08D51E02A355009979E2 /* square.png in Resources */,
+				5AC29E5E1DDDFC9D006D4213 /* Galindo-Regular.ttf in Resources */,
+				5A067BFA1E01BD310047E717 /* Lady Gaga   Telephone   Lyrics on screen.mp3 in Resources */,
+				5A067BF61E01BD310047E717 /* christina.mp3 in Resources */,
+				68887FBC1E005D1400F029A2 /* benny.mp3 in Resources */,
+				5A067BF91E01BD310047E717 /* Elio e le Storie Tese - Born to be Abramo ∞ - Ω.mp3 in Resources */,
+				5A067BFE1E01BD310047E717 /* Rolling Stones-start me up.mp3 in Resources */,
+				5A067BFC1E01BD310047E717 /* Live Your Life -  MIKA.mp3 in Resources */,
+				5AC29E541DDDA945006D4213 /* medley.mp3 in Resources */,
+				5A067BFD1E01BD310047E717 /* Mark Ronson - Uptown Funk (feat. Bruno Mars) - Lyrics.mp3 in Resources */,
+				5A067BF41E01BD310047E717 /* allsaints.mp3 in Resources */,
+				5A067BF81E01BD310047E717 /* David Guetta ft. Nicki Minaj - Turn Me On (Lyric Video) (1).mp3 in Resources */,
+				5AC29E5C1DDDF907006D4213 /* Main.storyboard in Resources */,
+				191D08D71E02B54E009979E2 /* note_sfx.mp3 in Resources */,
+				798B96751DD48D36000F1F11 /* Assets.xcassets in Resources */,
+				798B96781DD48D36000F1F11 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		798B96601DD48D36000F1F11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798B966E1DD48D36000F1F11 /* GameScene.swift in Sources */,
+				5A067BD61E017FCE0047E717 /* PlayerEntity.swift in Sources */,
+				5A067BD31E017FCE0047E717 /* BarrierEntity.swift in Sources */,
+				655CA4A41DD9C1960045F788 /* Array.swift in Sources */,
+				5A850D471DF07333009C94A5 /* BarrierTexture.swift in Sources */,
+				5A850D451DF06F80009C94A5 /* Barriers.swift in Sources */,
+				5A850D491DF07D56009C94A5 /* Note.swift in Sources */,
+				5AC29E561DDDD285006D4213 /* SfondoSfumato.swift in Sources */,
+				5A2D382F1DFEA83800D45F5E /* MainViewController.swift in Sources */,
+				6880DB421E00452C00002A01 /* generatingFunc.swift in Sources */,
+				5A850D3F1DF06C62009C94A5 /* PhysicsCategory.swift in Sources */,
+				5A067BD41E017FCE0047E717 /* EntityManager.swift in Sources */,
+				6880DB401DFFE56900002A01 /* GameViewController.swift in Sources */,
+				5AF9A9551DFDC0C00052E8EE /* PlaylistTableViewCell.swift in Sources */,
+				5A067BDC1E017FF20047E717 /* BarrierComponent.swift in Sources */,
+				5A067BDD1E017FF20047E717 /* NoteComponent.swift in Sources */,
+				5A067BE31E018ECA0047E717 /* JumpBehaviour.swift in Sources */,
+				5AF9A9571DFDC0D10052E8EE /* PlaylistTableViewController.swift in Sources */,
+				68B53D6A1DDB39EE00B47A94 /* wavePlotter.swift in Sources */,
+				655CA4B21DD9D0000045F788 /* AudioAnalysis.swift in Sources */,
+				6880DB3C1DFF425B00002A01 /* Pentagramma.swift in Sources */,
+				5A850D3D1DF06453009C94A5 /* Player.swift in Sources */,
+				5A067BE71E01BB610047E717 /* noteAutoAnimata.swift in Sources */,
+				5A067BDE1E017FF20047E717 /* PlayerComponent.swift in Sources */,
+				191637251E0291A100F2E916 /* Song.swift in Sources */,
+				6880DB3E1DFF507F00002A01 /* drawingFuncs.swift in Sources */,
+				5A067BD51E017FCE0047E717 /* NoteEntity.swift in Sources */,
+				5A067BDF1E017FF20047E717 /* TeamComponent.swift in Sources */,
+				798B96681DD48D36000F1F11 /* AppDelegate.swift in Sources */,
+				5A067BE51E0192C50047E717 /* Behaviour.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		798B96761DD48D36000F1F11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				798B96771DD48D36000F1F11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		798B967A1DD48D36000F1F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		798B967B1DD48D36000F1F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		798B967D1DD48D36000F1F11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GN42Y8BWCS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MusicRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.vultinho.fourun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		798B967E1DD48D36000F1F11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GN42Y8BWCS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MusicRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.vultinho.fourun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		798B965F1DD48D36000F1F11 /* Build configuration list for PBXProject "MusicRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B967A1DD48D36000F1F11 /* Debug */,
+				798B967B1DD48D36000F1F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		798B967C1DD48D36000F1F11 /* Build configuration list for PBXNativeTarget "MusicRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				798B967D1DD48D36000F1F11 /* Debug */,
+				798B967E1DD48D36000F1F11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 798B965C1DD48D36000F1F11 /* Project object */;
+}
